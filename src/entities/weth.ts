@@ -14,8 +14,8 @@ export enum ChainId {
   AVAXMAINNET = 43114,
   FANTOM = 250,
   CRONOSTESTNET = 338,
-  CRONOS = 25,
-  AURORA = 1313161554
+  CRONOS = 25
+  // AURORA = 1313161554
 }
 
 export const WETH = {
@@ -98,6 +98,6 @@ export const WETH = {
     'WCRO',
     'Wrapped CRO'
   ),
-  [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO'),
-  [ChainId.AURORA]: new Token(ChainId.AURORA, '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB', 18, 'WETH', 'Wrapped ETH')
+  [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO')
+  // [ChainId.AURORA]: new Token(ChainId.AURORA, '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB', 18, 'WETH', 'Wrapped ETH')
 }
