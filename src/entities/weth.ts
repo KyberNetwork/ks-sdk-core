@@ -14,7 +14,10 @@ export enum ChainId {
   AVAXMAINNET = 43114,
   FANTOM = 250,
   CRONOSTESTNET = 338,
-  CRONOS = 25
+  CRONOS = 25,
+  ARBITRUM = 42161,
+  ARBITRUM_TESTNET = 421611,
+  BTTC = 199
   // AURORA = 1313161554
 }
 
@@ -98,6 +101,27 @@ export const WETH = {
     'WCRO',
     'Wrapped CRO'
   ),
-  [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO')
+  [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO'),
+  [ChainId.ARBITRUM]: new Token(
+    ChainId.ARBITRUM,
+    '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.ARBITRUM_TESTNET]: new Token(
+    ChainId.ARBITRUM_TESTNET,
+    '0xB47e6A5f8b33b3F17603C83a0535A9dcD7E32681',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.BTTC]: new Token(
+    ChainId.BTTC,
+    '0x8D193c6efa90BCFf940A98785d1Ce9D093d3DC8A',
+    18,
+    'WBTT',
+    'Wrapped BitTorrent'
+  )
   // [ChainId.AURORA]: new Token(ChainId.AURORA, '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB', 18, 'WETH', 'Wrapped ETH')
 }

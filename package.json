@@ -1,6 +1,6 @@
 {
   "name": "@vutien/sdk-core",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "main": "dist/index.js",
   "description": "🛠 An CORE SDK for building DMM SDK ver 1 + 2",
   "typings": "dist/index.d.ts",
