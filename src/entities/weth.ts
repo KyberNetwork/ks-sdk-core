@@ -17,8 +17,10 @@ export enum ChainId {
   CRONOS = 25,
   ARBITRUM = 42161,
   ARBITRUM_TESTNET = 421611,
-  BTTC = 199
-  // AURORA = 1313161554
+  BTTC = 199,
+  VELAS = 106,
+  AURORA = 1313161554,
+  OASIS = 42262
 }
 
 export const WETH = {
@@ -61,14 +63,14 @@ export const WETH = {
   ),
   [ChainId.BSCTESTNET]: new Token(
     ChainId.BSCTESTNET,
-    '0xae13d989dac2f0debff460ac112a837c89baa7cd',
+    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
     18,
     'WBNB',
     'Wrapped BNB'
   ),
   [ChainId.BSCMAINNET]: new Token(
     ChainId.BSCMAINNET,
-    '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
+    '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
     'WBNB',
     'Wrapped BNB'
@@ -82,14 +84,14 @@ export const WETH = {
   ),
   [ChainId.AVAXMAINNET]: new Token(
     ChainId.AVAXMAINNET,
-    '0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7',
+    '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     18,
     'WAVAX',
     'Wrapped AVAX'
   ),
   [ChainId.FANTOM]: new Token(
     ChainId.FANTOM,
-    '0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83',
+    '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
     18,
     'WFTM',
     'Wrapped Fantom'
@@ -102,6 +104,7 @@ export const WETH = {
     'Wrapped CRO'
   ),
   [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO'),
+
   [ChainId.ARBITRUM]: new Token(
     ChainId.ARBITRUM,
     '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
@@ -122,6 +125,8 @@ export const WETH = {
     18,
     'WBTT',
     'Wrapped BitTorrent'
-  )
-  // [ChainId.AURORA]: new Token(ChainId.AURORA, '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB', 18, 'WETH', 'Wrapped ETH')
+  ),
+  [ChainId.VELAS]: new Token(ChainId.VELAS, '0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126', 18, 'WVLX', 'Wrapped VLX'),
+  [ChainId.AURORA]: new Token(ChainId.AURORA, '0xC9BdeEd33CD01541e1eeD10f90519d2C06Fe3feB', 18, 'WETH', 'Wrapped ETH'),
+  [ChainId.OASIS]: new Token(ChainId.OASIS, '0x21C718C22D52d0F3a789b752D4c2fD5908a8A733', 18, 'WROSE', 'Wrapped ROSE')
 }
