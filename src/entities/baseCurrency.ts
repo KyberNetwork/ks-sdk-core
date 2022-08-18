@@ -1,4 +1,5 @@
 import invariant from 'tiny-invariant'
+import { ChainId, ChainType, getChainType } from './chain'
 import { Currency } from './currency'
 import { Token } from './token'
 
@@ -18,7 +19,8 @@ export abstract class BaseCurrency {
   /**
    * The chain ID on which this currency resides
    */
-  public readonly chainId: number
+  public readonly chainId: ChainId
+  public readonly chainType: ChainType
   /**
    * The decimals used in representing currency amounts
    */
@@ -43,10 +45,11 @@ export abstract class BaseCurrency {
     invariant(Number.isSafeInteger(chainId), 'CHAIN_ID')
     invariant(decimals >= 0 && decimals < 255 && Number.isInteger(decimals), 'DECIMALS')
 
-    this.chainId = chainId
+    this.chainId = chainId in ChainId ? (chainId as ChainId) : ChainId.MAINNET
     this.decimals = decimals
     this.symbol = symbol
     this.name = name
+    this.chainType = getChainType(this.chainId)
   }
 
   /**

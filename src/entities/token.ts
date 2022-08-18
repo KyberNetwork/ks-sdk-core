@@ -1,7 +1,10 @@
+import { PublicKey } from '@solana/web3.js'
 import invariant from 'tiny-invariant'
 import { validateAndParseAddress } from '../utils/validateAndParseAddress'
 import { BaseCurrency } from './baseCurrency'
+import { ChainType, getChainType } from './chain'
 import { Currency } from './currency'
+import BN from 'bn.js'
 
 /**
  * Represents an ERC20 token with a unique address and some metadata.
@@ -14,10 +17,13 @@ export class Token extends BaseCurrency {
    * The contract address on the chain on which this token lives
    */
   public readonly address: string
+  public mint: PublicKey | null
 
   public constructor(chainId: number, address: string, decimals: number, symbol?: string, name?: string) {
     super(chainId, decimals, symbol, name)
-    this.address = validateAndParseAddress(address)
+    this.address = validateAndParseAddress(address, chainId)
+    if (this.chainType === ChainType.SOLANA) this.mint = new PublicKey(this.address)
+    else this.mint = null
   }
 
   /**
@@ -37,6 +43,7 @@ export class Token extends BaseCurrency {
   public sortsBefore(other: Token): boolean {
     invariant(this.chainId === other.chainId, 'CHAIN_IDS')
     invariant(this.address !== other.address, 'ADDRESSES')
+    if (this.chainType === ChainType.SOLANA) return new BN(this.mint!.toBytes()).lt(new BN(other.mint!.toBytes()))
     return this.address.toLowerCase() < other.address.toLowerCase()
   }
 
