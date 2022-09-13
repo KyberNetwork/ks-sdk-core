@@ -22,6 +22,7 @@ export enum ChainId {
   AURORA = 1313161554,
   OASIS = 42262,
   OPTIMISM = 10,
+  ETHW = 10001
 }
 
 export const WETH = {
@@ -31,6 +32,13 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped Ether'
+  ),
+  [ChainId.ETHW]: new Token(
+    ChainId.ETHW,
+    '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+    18,
+    'WETH_POW',
+    'Wrapped Ether POW'
   ),
   [ChainId.ROPSTEN]: new Token(
     ChainId.ROPSTEN,
@@ -136,5 +144,5 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped Ether'
-  ),
+  )
 }

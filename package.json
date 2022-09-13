@@ -1,7 +1,7 @@
 {
   "name": "@kyberswap/ks-sdk-core",
   "license": "MIT",
-  "version": "0.0.14",
+  "version": "0.0.15-beta",
   "main": "dist/index.js",
   "description": "🛠 An CORE SDK for building DMM SDK ver 1 + 2",
   "typings": "dist/index.d.ts",
