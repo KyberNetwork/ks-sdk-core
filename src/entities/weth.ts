@@ -78,7 +78,7 @@ export const WETH = {
   ),
   [ChainId.AVAXTESTNET]: new Token(
     ChainId.AVAXTESTNET,
-    '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
+    '0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3',
     18,
     'WAVAX',
     'Wrapped AVAX'
