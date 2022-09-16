@@ -21,6 +21,7 @@ export enum ChainId {
   OASIS = 42262,
   OPTIMISM = 10,
   SOLANA = 111999111999, //fake id
+  ETHW = 10001,
 }
 
 export function getChainType(chainId: ChainId) {
