@@ -6,7 +6,8 @@ const isValidSolanaAddress = (address: string): boolean => {
   try {
     if (!address) return false
     const pub = new PublicKey(address)
-    return PublicKey.isOnCurve(pub)
+    return true
+    // return PublicKey.isOnCurve(pub) // .isOnCurve return false on some valid address, e.g: DAI EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o
   } catch (e) {
     return false
   }
