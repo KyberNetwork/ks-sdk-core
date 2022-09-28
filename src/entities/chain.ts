@@ -20,7 +20,7 @@ export enum ChainId {
   AURORA = 1313161554,
   OASIS = 42262,
   OPTIMISM = 10,
-  SOLANA = 111999111999, //fake id
+  SOLANA = 101, //fake id
   ETHW = 10001,
 }
 

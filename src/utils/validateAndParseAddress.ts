@@ -6,8 +6,10 @@ const isValidSolanaAddress = (address: string): boolean => {
   try {
     if (!address) return false
     const pub = new PublicKey(address)
+    if (PublicKey.isOnCurve(pub)) return true
+    // .isOnCurve false on some valid address
+    // e.g: DAI https://solscan.io/address/EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o
     return true
-    // return PublicKey.isOnCurve(pub) // .isOnCurve return false on some valid address, e.g: DAI EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o
   } catch (e) {
     return false
   }
@@ -22,7 +24,7 @@ export function validateAndParseAddress(address: string, chainId: ChainId): stri
     const chainType = getChainType(chainId)
     if (chainType === ChainType.SOLANA) {
       if (isValidSolanaAddress(address)) return address
-      throw new Error()
+      throw new Error(`${address} is not a valid address.`)
     }
     return getAddress(address)
   } catch (error) {
