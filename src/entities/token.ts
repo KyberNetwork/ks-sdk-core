@@ -2,7 +2,7 @@ import { PublicKey } from '@solana/web3.js'
 import invariant from 'tiny-invariant'
 import { validateAndParseAddress } from '../utils/validateAndParseAddress'
 import { BaseCurrency } from './baseCurrency'
-import { ChainType, getChainType } from './chain'
+import { ChainType } from './chain'
 import { Currency } from './currency'
 import BN from 'bn.js'
 
