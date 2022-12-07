@@ -1,9 +1,6 @@
 export enum ChainId {
   MAINNET = 1,
-  ROPSTEN = 3,
-  RINKEBY = 4,
   GÖRLI = 5,
-  KOVAN = 42,
   MATIC = 137,
   MUMBAI = 80001,
   BSCTESTNET = 97,
@@ -11,7 +8,6 @@ export enum ChainId {
   AVAXTESTNET = 43113,
   AVAXMAINNET = 43114,
   FANTOM = 250,
-  CRONOSTESTNET = 338,
   CRONOS = 25,
   ARBITRUM = 42161,
   ARBITRUM_TESTNET = 421611,
