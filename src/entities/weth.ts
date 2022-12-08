@@ -10,22 +10,7 @@ export const WETH = {
     'Wrapped Ether',
   ),
   [ChainId.ETHW]: new Token(ChainId.ETHW, '0x7Bf88d2c0e32dE92CdaF2D43CcDc23e8Edfd5990', 18, 'WETHW', 'Wrapped ETHPoW'),
-  [ChainId.ROPSTEN]: new Token(
-    ChainId.ROPSTEN,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-    18,
-    'WETH',
-    'Wrapped Ether',
-  ),
-  [ChainId.RINKEBY]: new Token(
-    ChainId.RINKEBY,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
-    18,
-    'WETH',
-    'Wrapped Ether',
-  ),
   [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0x48f6D7dAE56623Dde5a0D56B283165cAE1753D70', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
     '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
@@ -74,13 +59,6 @@ export const WETH = {
     18,
     'WFTM',
     'Wrapped Fantom',
-  ),
-  [ChainId.CRONOSTESTNET]: new Token(
-    ChainId.CRONOSTESTNET,
-    '0x1A46dCaC1d91F1731574BEfAEDaC4E0392726e35',
-    18,
-    'WCRO',
-    'Wrapped CRO',
   ),
   [ChainId.CRONOS]: new Token(ChainId.CRONOS, '0x5C7F8A570d578ED84E63fdFA7b1eE72dEae1AE23', 18, 'WCRO', 'Wrapped CRO'),
   [ChainId.ARBITRUM]: new Token(
