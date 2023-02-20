@@ -9,7 +9,6 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
-  [ChainId.ETHW]: new Token(ChainId.ETHW, '0x7Bf88d2c0e32dE92CdaF2D43CcDc23e8Edfd5990', 18, 'WETHW', 'Wrapped ETHPoW'),
   [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0x48f6D7dAE56623Dde5a0D56B283165cAE1753D70', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.MATIC]: new Token(
     ChainId.MATIC,
