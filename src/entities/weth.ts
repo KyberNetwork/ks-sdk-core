@@ -68,13 +68,6 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
-  [ChainId.ARBITRUM_TESTNET]: new Token(
-    ChainId.ARBITRUM_TESTNET,
-    '0xB47e6A5f8b33b3F17603C83a0535A9dcD7E32681',
-    18,
-    'WETH',
-    'Wrapped Ether',
-  ),
   [ChainId.BTTC]: new Token(
     ChainId.BTTC,
     '0x8D193c6efa90BCFf940A98785d1Ce9D093d3DC8A',
