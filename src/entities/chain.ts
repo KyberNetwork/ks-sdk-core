@@ -16,7 +16,7 @@ export enum ChainId {
   OASIS = 42262,
   OPTIMISM = 10,
   ZKSYNC = 324,
-
+  LINEA_TESTNET = 59140,
   SOLANA = 101, //fake id
 }
 

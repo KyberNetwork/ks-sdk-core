@@ -87,6 +87,13 @@ export const WETH = {
   [ChainId.ZKSYNC]: new Token(
     ChainId.ZKSYNC,
     '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
+        18,
+    'WETH',
+    'Wrapped Ether',
+  ),
+  [ChainId.LINEA_TESTNET]: new Token(
+    ChainId.LINEA_TESTNET,
+    '0x2C1b868d6596a18e32E61B901E4060C872647b6C',
     18,
     'WETH',
     'Wrapped Ether',
