@@ -84,5 +84,12 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
+  [ChainId.ZKSYNC]: new Token(
+    ChainId.ZKSYNC,
+    '0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91',
+    18,
+    'WETH',
+    'Wrapped Ether',
+  ),
   [ChainId.SOLANA]: new Token(ChainId.SOLANA, 'So11111111111111111111111111111111111111112', 9, 'WSOL', 'Wrapped SOL'),
 }
