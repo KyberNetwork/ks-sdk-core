@@ -18,10 +18,11 @@ export enum ChainId {
   ZKSYNC = 324,
   LINEA_TESTNET = 59140,
   SOLANA = 101, //fake id
+  SOLANA_TESTNET = 103, //fake id
 }
 
 export function getChainType(chainId: ChainId) {
-  if (chainId === ChainId.SOLANA) return ChainType.SOLANA
+  if (chainId === ChainId.SOLANA || chainId === ChainId.SOLANA_TESTNET) return ChainType.SOLANA
   return ChainType.EVM
 }
 
