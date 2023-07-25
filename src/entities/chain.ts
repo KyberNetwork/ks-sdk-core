@@ -17,6 +17,7 @@ export enum ChainId {
   OPTIMISM = 10,
   ZKSYNC = 324,
   LINEA_TESTNET = 59140,
+  LINEA = 59144,
   SOLANA = 101, //fake id
   SOLANA_TESTNET = 103, //fake id
 }

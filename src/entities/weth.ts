@@ -98,6 +98,7 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
+  [ChainId.LINEA]: new Token(ChainId.LINEA, '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.SOLANA]: new Token(ChainId.SOLANA, 'So11111111111111111111111111111111111111112', 9, 'WSOL', 'Wrapped SOL'),
   [ChainId.SOLANA_TESTNET]: new Token(
     ChainId.SOLANA_TESTNET,

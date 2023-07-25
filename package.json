@@ -1,6 +1,6 @@
 {
   "name": "@kyberswap/ks-sdk-core",
-  "version": "1.0.7-rc",
+  "version": "1.0.7",
   "license": "MIT",
   "main": "dist/index.js",
   "description": "🛠 An CORE SDK for building DMM Classic SDK, Elastic SDK and Solana SDK",
