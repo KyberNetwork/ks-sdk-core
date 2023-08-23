@@ -18,6 +18,7 @@ export enum ChainId {
   ZKSYNC = 324,
   LINEA = 59144,
   ZKEVM = 1101,
+  BASE = 8453,
   SOLANA = 101, //fake id
   SOLANA_DEVNET = 103, //fake id
 }
