@@ -6,4 +6,5 @@ npm i @kyberswap/ks-sdk-core
 ```
 
 **Documentation**: [Core SDK Docs](https://docs.kyberswap.com/liquidity-solutions/core-sdk)
+
 **Technical Reference**: [Core Classes](https://docs.kyberswap.com/liquidity-solutions/core-sdk/classes)
