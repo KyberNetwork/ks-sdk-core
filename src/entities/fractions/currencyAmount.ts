@@ -6,9 +6,7 @@ import { Fraction } from './fraction'
 import _Big from 'big.js'
 
 import toFormat from 'toformat'
-import { BigintIsh, Rounding } from '../../constants'
-import validateValue from '../../utils/validateValue'
-import BN from 'bn.js'
+import { BigintIsh, Rounding, MaxUint256 } from '../../constants'
 
 const Big = toFormat(_Big)
 
@@ -21,8 +19,7 @@ export class CurrencyAmount<T extends Currency> extends Fraction {
    * @param currency the currency in the amount
    * @param rawAmount the raw token or ether amount
    */
-  public static fromRawAmount<T extends Currency>(currency: T, rawAmount: BigintIsh | BN): CurrencyAmount<T> {
-    if (rawAmount instanceof BN) return new CurrencyAmount(currency, rawAmount.toString())
+  public static fromRawAmount<T extends Currency>(currency: T, rawAmount: BigintIsh): CurrencyAmount<T> {
     return new CurrencyAmount(currency, rawAmount)
   }
 
@@ -42,7 +39,7 @@ export class CurrencyAmount<T extends Currency> extends Fraction {
 
   protected constructor(currency: T, numerator: BigintIsh, denominator?: BigintIsh) {
     super(numerator, denominator)
-    validateValue(currency.chainId, this.quotient)
+    invariant(JSBI.lessThanOrEqual(this.quotient, MaxUint256), 'AMOUNT')
     this.currency = currency
     this.decimalScale = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(currency.decimals))
   }

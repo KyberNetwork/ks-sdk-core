@@ -5,8 +5,6 @@ import _Big, { RoundingMode } from 'big.js'
 import toFormat from 'toformat'
 
 import { BigintIsh, Rounding } from '../../constants'
-import { JSBItoBN } from '../../utils/number'
-import BN from 'bn.js'
 
 const Decimal = toFormat(_Decimal)
 const Big = toFormat(_Big)
@@ -27,14 +25,6 @@ export class Fraction {
   public readonly numerator: JSBI
   public readonly denominator: JSBI
 
-  public get numberatorBN(): BN {
-    return JSBItoBN(this.numerator)
-  }
-
-  public get denominatorBN(): BN {
-    return JSBItoBN(this.denominator)
-  }
-
   public constructor(numerator: BigintIsh, denominator: BigintIsh = JSBI.BigInt(1)) {
     this.numerator = JSBI.BigInt(numerator)
     this.denominator = JSBI.BigInt(denominator)
@@ -51,10 +41,6 @@ export class Fraction {
   // performs floor division
   public get quotient(): JSBI {
     return JSBI.divide(this.numerator, this.denominator)
-  }
-
-  public get quotientBN(): BN {
-    return JSBItoBN(this.quotient)
   }
 
   // remainder after floor division
