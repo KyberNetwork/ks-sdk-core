@@ -18,16 +18,4 @@ export enum ChainId {
   ZKEVM = 1101,
   BASE = 8453,
   SCROLL = 534352,
-  SOLANA = 101, //fake id
-  SOLANA_DEVNET = 103, //fake id
-}
-
-export function getChainType(chainId: ChainId) {
-  if (chainId === ChainId.SOLANA || chainId === ChainId.SOLANA_DEVNET) return ChainType.SOLANA
-  return ChainType.EVM
-}
-
-export enum ChainType {
-  EVM = 'EVM',
-  SOLANA = 'SOLANA',
 }

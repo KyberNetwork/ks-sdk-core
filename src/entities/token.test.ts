@@ -6,18 +6,18 @@ describe('Token', () => {
 
   describe('#constructor', () => {
     it('fails with invalid address', () => {
-      expect(() => new Token(3, '0xhello00000000000000000000000000000000002', 18).address).toThrow(
+      expect(() => new Token(10, '0xhello00000000000000000000000000000000002', 18).address).toThrow(
         '0xhello00000000000000000000000000000000002 is not a valid address',
       )
     })
     it('fails with negative decimals', () => {
-      expect(() => new Token(3, ADDRESS_ONE, -1).address).toThrow('DECIMALS')
+      expect(() => new Token(10, ADDRESS_ONE, -1).address).toThrow('DECIMALS')
     })
     it('fails with 256 decimals', () => {
-      expect(() => new Token(3, ADDRESS_ONE, 256).address).toThrow('DECIMALS')
+      expect(() => new Token(10, ADDRESS_ONE, 256).address).toThrow('DECIMALS')
     })
     it('fails with non-integer decimals', () => {
-      expect(() => new Token(3, ADDRESS_ONE, 1.5).address).toThrow('DECIMALS')
+      expect(() => new Token(10, ADDRESS_ONE, 1.5).address).toThrow('DECIMALS')
     })
   })
 
@@ -27,7 +27,7 @@ describe('Token', () => {
     })
 
     it('false if chain id differs', () => {
-      expect(new Token(3, ADDRESS_ONE, 18).equals(new Token(1, ADDRESS_ONE, 18))).toBe(false)
+      expect(new Token(10, ADDRESS_ONE, 18).equals(new Token(1, ADDRESS_ONE, 18))).toBe(false)
     })
 
     it('true if only decimals differs', () => {

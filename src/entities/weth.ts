@@ -1,5 +1,5 @@
-import { ChainId } from './chain'
 import { Token } from './token'
+import { ChainId } from './chain'
 
 export const WETH = {
   [ChainId.MAINNET]: new Token(
@@ -92,13 +92,11 @@ export const WETH = {
   [ChainId.LINEA]: new Token(ChainId.LINEA, '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.ZKEVM]: new Token(ChainId.ZKEVM, '0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.BASE]: new Token(ChainId.BASE, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.SCROLL]: new Token(ChainId.SCROLL, '0x5300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped Ether'),
-  [ChainId.SOLANA]: new Token(ChainId.SOLANA, 'So11111111111111111111111111111111111111112', 9, 'WSOL', 'Wrapped SOL'),
-  [ChainId.SOLANA_DEVNET]: new Token(
-    ChainId.SOLANA_DEVNET,
-    'So11111111111111111111111111111111111111112',
-    9,
-    'WSOL',
-    'Wrapped SOL',
+  [ChainId.SCROLL]: new Token(
+    ChainId.SCROLL,
+    '0x5300000000000000000000000000000000000004',
+    18,
+    'WETH',
+    'Wrapped Ether',
   ),
 }

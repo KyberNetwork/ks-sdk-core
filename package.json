@@ -1,9 +1,9 @@
 {
   "name": "@kyberswap/ks-sdk-core",
-  "version": "1.0.13",
+  "version": "1.1.0-rc",
   "license": "MIT",
   "main": "dist/index.js",
-  "description": "🛠 An CORE SDK for building DMM Classic SDK, Elastic SDK and Solana SDK",
+  "description": "🛠 An CORE SDK for building DMM Classic SDK, Elastic SDK",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
@@ -22,8 +22,6 @@
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
-    "@types/bn.js": "^5.1.0",
-    "@solana/web3.js": "^1.66.2",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.4",

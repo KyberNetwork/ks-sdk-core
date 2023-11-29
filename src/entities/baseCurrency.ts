@@ -1,7 +1,7 @@
 import invariant from 'tiny-invariant'
-import { ChainId, ChainType, getChainType } from './chain'
 import { Currency } from './currency'
 import { Token } from './token'
+import { ChainId } from './chain'
 
 /**
  * A currency is any fungible financial instrument, including Ether, all ERC20 tokens, and other chain-native currencies
@@ -20,7 +20,6 @@ export abstract class BaseCurrency {
    * The chain ID on which this currency resides
    */
   public readonly chainId: ChainId
-  public readonly chainType: ChainType
   /**
    * The decimals used in representing currency amounts
    */
@@ -43,13 +42,13 @@ export abstract class BaseCurrency {
    */
   protected constructor(chainId: number, decimals: number, symbol?: string, name?: string) {
     invariant(Number.isSafeInteger(chainId), 'CHAIN_ID')
+    invariant(chainId in ChainId, 'CHAIN_ID_NOT_SUPPORTED')
     invariant(decimals >= 0 && decimals < 255 && Number.isInteger(decimals), 'DECIMALS')
 
-    this.chainId = chainId in ChainId ? (chainId as ChainId) : ChainId.MAINNET
+    this.chainId = chainId
     this.decimals = decimals
     this.symbol = symbol
     this.name = name
-    this.chainType = getChainType(this.chainId)
   }
 
   /**
