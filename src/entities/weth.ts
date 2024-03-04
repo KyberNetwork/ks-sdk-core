@@ -99,4 +99,5 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
+  [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped Ether'),
 }

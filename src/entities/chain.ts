@@ -18,4 +18,5 @@ export enum ChainId {
   ZKEVM = 1101,
   BASE = 8453,
   SCROLL = 534352,
+  BLAST = 81457,
 }
