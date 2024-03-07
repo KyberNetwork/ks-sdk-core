@@ -11,7 +11,6 @@ export enum ChainId {
   CRONOS = 25,
   ARBITRUM = 42161,
   BTTC = 199,
-  AURORA = 1313161554,
   OPTIMISM = 10,
   ZKSYNC = 324,
   LINEA = 59144,
