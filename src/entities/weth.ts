@@ -106,5 +106,5 @@ export const WETH = {
     'WMNT',
     'Wrapped Mantle',
   ),
-  [ChainId.OKX]: new Token(ChainId.OKX, '0xe538905cf8410324e03a5a23c1c177a474d59b2b', 18, 'WOKB', 'Wrapped OKB'),
+  [ChainId.XLAYER]: new Token(ChainId.XLAYER, '0xe538905cf8410324e03a5a23c1c177a474d59b2b', 18, 'WOKB', 'Wrapped OKB'),
 }
