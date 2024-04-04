@@ -99,4 +99,12 @@ export const WETH = {
     'Wrapped Ether',
   ),
   [ChainId.BLAST]: new Token(ChainId.BLAST, '0x4300000000000000000000000000000000000004', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.MANTLE]: new Token(
+    ChainId.MANTLE,
+    '0x78c1b0C915c4FAA5FffA6CAbf0219DA63d7f4cb8',
+    18,
+    'WMNT',
+    'Wrapped Mantle',
+  ),
+  [ChainId.OKX]: new Token(ChainId.OKX, '0xe538905cf8410324e03a5a23c1c177a474d59b2b', 18, 'WOKB', 'Wrapped OKB'),
 }

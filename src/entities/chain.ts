@@ -18,4 +18,6 @@ export enum ChainId {
   BASE = 8453,
   SCROLL = 534352,
   BLAST = 81457,
+  MANTLE = 5000,
+  OKX = 196,
 }
