@@ -98,5 +98,5 @@ export const WETH = {
     'WMNT',
     'Wrapped Mantle',
   ),
-  [ChainId.XLAYER]: new Token(ChainId.XLAYER, '0xe538905cf8410324e03a5a23c1c177a474d59b2b', 18, 'WOKB', 'Wrapped OKB'),
+  [ChainId.SONIC]: new Token(ChainId.SONIC, '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38', 18, 'wS', 'Wrapped S'),
 }

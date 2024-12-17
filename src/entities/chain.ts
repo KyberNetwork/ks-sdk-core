@@ -17,5 +17,5 @@ export enum ChainId {
   SCROLL = 534352,
   BLAST = 81457,
   MANTLE = 5000,
-  XLAYER = 196,
+  SONIC = 146,
 }
