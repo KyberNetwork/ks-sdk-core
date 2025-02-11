@@ -18,4 +18,5 @@ export enum ChainId {
   BLAST = 81457,
   MANTLE = 5000,
   SONIC = 146,
+  BERA = 80094,
 }

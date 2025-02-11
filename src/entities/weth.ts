@@ -99,4 +99,5 @@ export const WETH = {
     'Wrapped Mantle',
   ),
   [ChainId.SONIC]: new Token(ChainId.SONIC, '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38', 18, 'wS', 'Wrapped S'),
+  [ChainId.BERA]: new Token(ChainId.BERA, '0x6969696969696969696969696969696969696969', 18, 'wBera', 'Wrapped Bera'),
 }
