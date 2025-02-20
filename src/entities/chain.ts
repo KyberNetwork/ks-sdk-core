@@ -12,7 +12,6 @@ export enum ChainId {
   OPTIMISM = 10,
   ZKSYNC = 324,
   LINEA = 59144,
-  ZKEVM = 1101,
   BASE = 8453,
   SCROLL = 534352,
   BLAST = 81457,
