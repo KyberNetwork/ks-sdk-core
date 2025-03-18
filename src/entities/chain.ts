@@ -18,4 +18,5 @@ export enum ChainId {
   MANTLE = 5000,
   SONIC = 146,
   BERA = 80094,
+  RONIN = 2020,
 }
