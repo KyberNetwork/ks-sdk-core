@@ -19,4 +19,5 @@ export enum ChainId {
   SONIC = 146,
   BERA = 80094,
   RONIN = 2020,
+  UNICHAIN = 130,
 }

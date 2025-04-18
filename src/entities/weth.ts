@@ -100,4 +100,11 @@ export const WETH = {
   [ChainId.SONIC]: new Token(ChainId.SONIC, '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38', 18, 'wS', 'Wrapped S'),
   [ChainId.BERA]: new Token(ChainId.BERA, '0x6969696969696969696969696969696969696969', 18, 'wBera', 'Wrapped Bera'),
   [ChainId.RONIN]: new Token(ChainId.RONIN, '0xe514d9deb7966c8be0ca922de8a064264ea6bcd4', 18, 'WRON', 'Wrapped Ronin'),
+  [ChainId.UNICHAIN]: new Token(
+    ChainId.UNICHAIN,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped ETH',
+  ),
 }
