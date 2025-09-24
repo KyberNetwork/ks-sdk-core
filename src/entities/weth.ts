@@ -93,4 +93,12 @@ export const WETH = {
     'WHYPE',
     'Wrapped HYPE',
   ),
+  [ChainId.ETHERLINK]: new Token(
+    ChainId.ETHERLINK,
+    '0xc9B53AB2679f573e480d01e0f49e2B5CFB7a3EAb',
+    18,
+    'WXTZ',
+    'Wrapped XTZ',
+  ),
+  [ChainId.PLASMA]: new Token(ChainId.PLASMA, '0x6100E367285b01F48D07953803A2d8dCA5D19873', 18, 'WXPL', 'Wrapped XPL'),
 }

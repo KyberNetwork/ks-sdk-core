@@ -18,4 +18,6 @@ export enum ChainId {
   RONIN = 2020,
   UNICHAIN = 130,
   HYPEREVM = 999,
+  ETHERLINK = 42793,
+  PLASMA = 9745,
 }
