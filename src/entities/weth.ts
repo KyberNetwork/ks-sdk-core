@@ -17,33 +17,12 @@ export const WETH = {
     'WMATIC',
     'Wrapped Matic',
   ),
-  [ChainId.MUMBAI]: new Token(
-    ChainId.MUMBAI,
-    '0x19395624C030A11f58e820C3AeFb1f5960d9742a',
-    18,
-    'WMATIC',
-    'Wrapped Matic',
-  ),
-  [ChainId.BSCTESTNET]: new Token(
-    ChainId.BSCTESTNET,
-    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
-    18,
-    'WBNB',
-    'Wrapped BNB',
-  ),
   [ChainId.BSCMAINNET]: new Token(
     ChainId.BSCMAINNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     18,
     'WBNB',
     'Wrapped BNB',
-  ),
-  [ChainId.AVAXTESTNET]: new Token(
-    ChainId.AVAXTESTNET,
-    '0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3',
-    18,
-    'WAVAX',
-    'Wrapped AVAX',
   ),
   [ChainId.AVAXMAINNET]: new Token(
     ChainId.AVAXMAINNET,
@@ -106,5 +85,12 @@ export const WETH = {
     18,
     'WETH',
     'Wrapped ETH',
+  ),
+  [ChainId.HYPEREVM]: new Token(
+    ChainId.HYPEREVM,
+    '0x5555555555555555555555555555555555555555',
+    18,
+    'WHYPE',
+    'Wrapped HYPE',
   ),
 }
