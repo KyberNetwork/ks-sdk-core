@@ -101,4 +101,5 @@ export const WETH = {
     'Wrapped XTZ',
   ),
   [ChainId.PLASMA]: new Token(ChainId.PLASMA, '0x6100E367285b01F48D07953803A2d8dCA5D19873', 18, 'WXPL', 'Wrapped XPL'),
+  [ChainId.MONAD]: new Token(ChainId.MONAD, '0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A', 18, 'MON', 'Wrapped MON'),
 }
