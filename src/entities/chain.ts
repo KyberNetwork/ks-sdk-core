@@ -21,4 +21,5 @@ export enum ChainId {
   ETHERLINK = 42793,
   PLASMA = 9745,
   MONAD = 143,
+  MEGAETH = 4326,
 }
