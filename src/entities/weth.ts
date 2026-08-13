@@ -109,7 +109,7 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
-  // [ChainId.RISE]: new Token(ChainId.RISE, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped ETH'),
+  [ChainId.RISE]: new Token(ChainId.RISE, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped ETH'),
   [ChainId.ROBINHOOD]: new Token(
     ChainId.ROBINHOOD,
     '0x0Bd7D308f8E1639FAb988df18A8011f41EAcAD73',
