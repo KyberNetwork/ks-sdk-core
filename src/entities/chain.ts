@@ -22,6 +22,6 @@ export enum ChainId {
   PLASMA = 9745,
   MONAD = 143,
   MEGAETH = 4326,
-  // RISE = 4153, // pending KyberSwap interface RISE config (PR #2965); keep out of the enum so consumers aren't forced to map it
+  RISE = 4153,
   ROBINHOOD = 4663,
 }
