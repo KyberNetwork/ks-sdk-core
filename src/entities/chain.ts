@@ -24,4 +24,5 @@ export enum ChainId {
   MEGAETH = 4326,
   RISE = 4153,
   ROBINHOOD = 4663,
+  ARC = 5042,
 }
