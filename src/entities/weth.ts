@@ -117,4 +117,8 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
+  // Arc has no wrapped-native contract: USDC is the native asset and exposes a built-in ERC-20
+  // interface at this address. It reports 6 decimals while the native interface reports 18, so this
+  // is the only chain where WETH[chainId].decimals differs from the native currency's.
+  [ChainId.ARC]: new Token(ChainId.ARC, '0x3600000000000000000000000000000000000000', 6, 'USDC', 'USDC'),
 }
