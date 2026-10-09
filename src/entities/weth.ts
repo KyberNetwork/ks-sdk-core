@@ -121,4 +121,11 @@ export const WETH = {
   // interface at this address. It reports 6 decimals while the native interface reports 18, so this
   // is the only chain where WETH[chainId].decimals differs from the native currency's.
   [ChainId.ARC]: new Token(ChainId.ARC, '0x3600000000000000000000000000000000000000', 6, 'USDC', 'USDC'),
+  [ChainId.ABSTRACT]: new Token(
+    ChainId.ABSTRACT,
+    '0x3439153EB7AF838Ad19d56E1571FBD09333C2809',
+    18,
+    'WETH',
+    'Wrapped Ether',
+  ),
 }
