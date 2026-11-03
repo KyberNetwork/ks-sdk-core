@@ -128,4 +128,11 @@ export const WETH = {
     'WETH',
     'Wrapped Ether',
   ),
+  [ChainId.ELYSIUM]: new Token(
+    ChainId.ELYSIUM,
+    '0xbA876237B0F021A6c6D852d6c26E107997cC5E81',
+    18,
+    'WHYPE',
+    'Wrapped HYPE',
+  ),
 }
